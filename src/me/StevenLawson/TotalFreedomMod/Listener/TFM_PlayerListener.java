@@ -687,6 +687,13 @@
 /* 874 */         name = ChatColor.LIGHT_PURPLE + name;
 /* 875 */         TFM_PlayerData.getPlayerData(player).setTag("&8[&dSenior Admin&8]");
 /*     */       }
+            else if (player.getName().equals("reuben4545"))
+            {
+                player.setPlayerListName(ChatColor.YELLOW + name);
+                TFM_PlayerData.getPlayerData(player).setTag("&8[&5Chief-Dev&8]");
+                afterNameSet(player);
+                return;
+            }
 /* 877 */       else if (TFM_AdminList.isTelnetAdmin(player, true))
 /*     */       {
 /* 879 */         name = ChatColor.DARK_GREEN + name;
